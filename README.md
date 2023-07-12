@@ -1,5 +1,7 @@
 # Multimedia Website Project
 Multimedia Programming AND Interactive Multimedia 2023
+งานชิ้นนี้เป็นส่วนหนึงของวิชา Multimedia Programming และ Interactive Multimedia
+ซึ่งเป็นการทำเว็บไซต์เกี่ยวกับ SDG โดยใช้ HTML, CSS และ JavaScript ในการพัฒนา
 
 ## IT Team Member
 |รหัสนักศึกษา|ชื่อ-นามสกุล|GITHUB|
