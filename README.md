@@ -1,4 +1,4 @@
-# Multimedia
+# Multimedia Website Project
 Multimedia Programming AND Interactive Multimedia 2023
 
 ## IT Team Member
