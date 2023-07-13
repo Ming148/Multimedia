@@ -6,7 +6,7 @@
 |รหัสนักศึกษา|ชื่อ-นามสกุล|GITHUB|
 |---|---|---|
 |64070008|กุลธิดา จำปา|[Rick Astley ปลอม](https://youtu.be/fDX-syuJ68g)|
-|64070048|ธาม ถาวรกิจ|[Rick Astley ปลอม](https://youtu.be/fDX-syuJ68g)|
+|64070048|ธาม ถาวรกิจ|[64070048tham thvornkij](https://github.com/64070048)|
 |64070080|เพ็ญพิชชา อยู่ประเสริฐ|[penpitcha080](https://github.com/penpitcha080)|
 |64070085|ภาพตะวัน ปัญญาพานิชกุล|[FifaPaptawan](https://github.com/FifaPaptawan)|
 |64070113|โหว้ย หมิง ลี|[Ming148](https://github.com/Ming148)|
