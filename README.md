@@ -5,7 +5,7 @@
 ## IT Team Member
 |รหัสนักศึกษา|ชื่อ-นามสกุล|GITHUB|
 |---|---|---|
-|64070008|กุลธิดา จำปา|[Kultida Jumpa](https://github.com/winniemooz)|
+|64070008|กุลธิดา จำปา|[winniemooz](https://github.com/winniemooz)|
 |64070048|ธาม ถาวรกิจ|[64070048tham thvornkij](https://github.com/64070048)|
 |64070080|เพ็ญพิชชา อยู่ประเสริฐ|[penpitcha080](https://github.com/penpitcha080)|
 |64070085|ภาพตะวัน ปัญญาพานิชกุล|[FifaPaptawan](https://github.com/FifaPaptawan)|
