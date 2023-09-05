@@ -14,7 +14,7 @@ html {
 .bottle {
         display: flex;
         align-items: center;
-        background-image: url(assets/images/landing.svg);
+        background-image: url(../Images/landing.svg);
         background-position: center;
         /* background-attachment: fixed; */
         background-size: cover;
@@ -24,7 +24,7 @@ html {
 }
 
 .title {
-        background-image: url(assets/images/OnTheLock.svg);
+        background-image: url(../Images/OnTheLock.svg);
         background-repeat: no-repeat;
         background-position: center;
         /* background-attachment: fixed; */
@@ -39,10 +39,6 @@ html {
         }
 
         .title {
-                background-image: url(assets/images/OnTheLock.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                /* background-attachment: fixed; */
                 background-size: cover;
                 width: 399px;
                 height: 278px;
