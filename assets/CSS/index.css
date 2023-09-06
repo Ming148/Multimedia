@@ -58,6 +58,74 @@ html {
         /* filter: hue-rotate(45deg); */
 }
 
+.newspaper {
+        display: grid;
+        grid-template-rows: 50vh 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 150vh;
+        background-image: linear-gradient(#C17C7C, #262526);
+}
+
+.nsp {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(../Images/nsp.png);
+        background-position: center;
+        background-size: cover;
+        width: 1000px;
+        height: 750px;
+        animation: shake 5s infinite;
+}
+
+@keyframes shake {
+        0% {
+                transform: rotate(0deg);
+        }
+
+        10% {
+                transform: rotate(-2deg);
+        }
+
+        20% {
+                transform: rotate(2deg);
+        }
+
+        30% {
+                transform: rotate(0deg);
+        }
+
+        40% {
+                transform: rotate(2deg);
+        }
+
+        50% {
+                transform: rotate(-2deg);
+        }
+
+        60% {
+                transform: rotate(0deg);
+        }
+
+        70% {
+                transform: rotate(-2deg);
+        }
+
+        80% {
+                transform: rotate(2deg);
+        }
+
+        90% {
+                transform: rotate(-1deg);
+        }
+
+        100% {
+                transform: rotate(0deg);
+        }
+}
+
 @media screen and (max-width: 1233px) {
         .bottle {
                 background-position: right;
@@ -73,11 +141,9 @@ html {
                 /* bring your own prefixes */
                 transform: translate(-50%, -50%);
         }
-}
 
-.newspaper {
-        margin: 0;
-        width: 100%;
-        height: 150vh;
-        background-image: linear-gradient(#C17C7C, #262526);
+        .nsp {
+                width: 385px;
+                height: 288.75px;
+        }
 }
