@@ -23,6 +23,29 @@ html {
         margin: 0;
 }
 
+
+@keyframes lighting {
+        0% {
+                filter: contrast(200%);
+        }
+
+        75% {
+                filter: contrast(100%);
+        }
+
+        80% {
+                filter: contrast(200%);
+        }
+
+        90% {
+                filter: contrast(100%);
+        }
+
+        100% {
+                filter: contrast(200%);
+        }
+}
+
 .title {
         background-image: url(../Images/OnTheLock.svg);
         background-repeat: no-repeat;
@@ -31,6 +54,8 @@ html {
         background-size: cover;
         width: 1233px;
         height: 947px;
+        animation: lighting 5s infinite;
+        /* filter: hue-rotate(45deg); */
 }
 
 @media screen and (max-width: 1233px) {
