@@ -1,11 +1,12 @@
 body{
     font-family: 'Noto Sans Thai Looped', sans-serif;
     background-color: rgb(243, 241, 221);
-    height: 6000px;
+    height: 4400px;
 }
 .container{
     position:relative;
     width: 100%;
+    height: 100%;
     container-type: inline-size;
 }
 .texttitle{
@@ -24,6 +25,7 @@ body{
     position: relative;
     padding-top: 30px;
     margin: auto;
+    width: 100%;
     height: 100%;
 }
 .textslidehead{
@@ -56,7 +58,7 @@ body{
 }
 .textslide{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
     font-size: 0.8rem;
     color: rgb(60, 135, 201);
 }
@@ -86,7 +88,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     top: 30%;
-    left: 5.2vw;
+    left: 9.2vw;
     width: 30%;
     height: auto;
 }
@@ -97,7 +99,7 @@ body{
     margin-right: auto;
     width: 70%;
     height: auto;
-    top: 45%;
+    top: 70%;
     left: 5.2vw;
 }
 .imgblendblack{
@@ -107,7 +109,7 @@ body{
     margin-right: auto;
     width: 70%;
     height: auto;
-    top: 45%;
+    top: 70%;
     left: 5.2vw;
 }
 .imgblendpoorblack{
@@ -117,7 +119,7 @@ body{
     margin-right: auto;
     width: 70%;
     height: auto;
-    top: 47%;
+    top: 72%;
     left: 5.2vw;
 }
 .imgtask{
@@ -127,8 +129,8 @@ body{
     margin-right: auto;
     width: 50%;
     height: auto;
-    top: 65%;
-    left: 5.2vw;
+    top: 100%;
+    left: 6.2vw;
 }
 .imgtaskblack{
     position: absolute;
@@ -137,8 +139,8 @@ body{
     margin-right: auto;
     width: 50%;
     height: auto;
-    top: 65%;
-    left: 5.2vw;
+    top: 100%;
+    left: 6.2vw;
 }
 .imgtaskpoorblack{
     position: absolute;
@@ -147,50 +149,58 @@ body{
     margin-right: auto;
     width: 50%;
     height: auto;
-    top: 67%;
-    left: 5.2vw;
+    top: 100%;
+    left: 6.2vw;
 }
 .imgalclion{
-    margin-top: 100vh;
     position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: auto;
+    top: 130%;
+    left: 6.2vw;
 }
 .imgalccat{
-    margin-top: 100vh;
     position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: auto;
+    top: 130%;
+    left: 6.2vw;
 }
 .imgstar2{
     position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
     height: auto;
+    top: 137.9%;
+    left: 14.9vw;
 }
 .imgstar3{
     position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     height: auto;
+    top: 132%;
+    left: -3vw;
 }
 .imgstar4{
     position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
     height: auto;
+    top: 133%;
+    left: 16.2vw;
 }
 .imgachievement1{
     margin-top: 200vh;
@@ -209,25 +219,23 @@ body{
     height: auto;
 }
 .scrollbar{
-    position: absolute;
-    top:25vh;
+    position: block;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width:100%;
-    height:100%; 
+    grid-template-columns: 1fr 1fr 1fr;
+    width:80%;
+    height:98%; 
 }
 .l_bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-right: auto;
     background-color: #96c896;
-    width:15%;
+    width:10%;
     height:100%;
     margin:auto;
 }
 .r_bar{
     background-color: lightgray;
-    width:15%;
+    width:10%;
     height:100%;
     margin:auto;
 }
@@ -238,4 +246,10 @@ body{
     background-color: lightgrey;
     width: 100%;
     height:30vh;
+}
+.containerscrollbar{
+    top:25vh;
+    position: absolute;
+    height:100%; 
+    width: 100%;
 }
