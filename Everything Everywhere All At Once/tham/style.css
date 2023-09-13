@@ -6,7 +6,6 @@ body{
 .container{
     position:relative;
     width: 100%;
-    height: 500px;
     container-type: inline-size;
 }
 .texttitle{
@@ -34,7 +33,6 @@ body{
     color: rgb(220, 86, 50);
 }
 .vs-text{
-    margin-top:;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -209,4 +207,35 @@ body{
     margin-right: auto;
     width: 80%;
     height: auto;
+}
+.scrollbar{
+    position: absolute;
+    top:25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    height:100%; 
+}
+.l_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #96c896;
+    width:15%;
+    height:100%;
+    margin:auto;
+}
+.r_bar{
+    background-color: lightgray;
+    width:15%;
+    height:100%;
+    margin:auto;
+}
+
+.greenbar{
+    position: sticky;
+    top:70vh;
+    background-color: lightgrey;
+    width: 100%;
+    height:30vh;
 }
