@@ -218,38 +218,36 @@ body{
     width: 80%;
     height: auto;
 }
-.scrollbar{
-    position: block;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width:80%;
-    height:98%; 
-}
-.l_bar{
-    margin-right: auto;
-    background-color: #96c896;
-    width:10%;
-    height:100%;
-    margin:auto;
-}
-.r_bar{
-    background-color: lightgray;
-    width:10%;
-    height:100%;
-    margin:auto;
-}
-
-.greenbar{
-    position: sticky;
-    top:70vh;
-    background-color: lightgrey;
-    width: 100%;
-    height:30vh;
-}
 .containerscrollbar{
     top:25vh;
     position: absolute;
     height:100%; 
     width: 100%;
 }
+
+.raceBar {
+    position:absolute;
+    top:40vh;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    justify-content: space-around;
+    gap:7%;
+  }
+  
+  .progressBar, .fakeProgressBar {
+    width: 7%;
+    height: 100%;
+    background-color: #D2D4D4;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress{
+    width: 100%;
+    height: 0%;
+    background-color: #96c896;
+    position: absolute;
+    top: 0;
+    transition: all 0.1s ease-out;
+  }
