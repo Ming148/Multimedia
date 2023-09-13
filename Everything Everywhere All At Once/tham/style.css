@@ -1,0 +1,212 @@
+body{
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    background-color: rgb(243, 241, 221);
+    height: 6000px;
+}
+.container{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    container-type: inline-size;
+}
+.texttitle{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.slidebar{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mini-container{
+    position: relative;
+    padding-top: 30px;
+    margin: auto;
+    height: 100%;
+}
+.textslidehead{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.vs-text{
+    margin-top:;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.imglionicon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+    width: 50%;
+    height: auto;
+}
+.imgcaticon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+    width: 40%;
+    height: auto;
+}
+.textslide{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 0.8rem;
+    color: rgb(60, 135, 201);
+}
+.imgmoney{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    top: 30%;
+    left: 5.2vw;
+    height: auto;
+}
+.imgmoneyblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    top: 30%;
+    left: 5.2vw;
+}
+.imgcoinblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 5.2vw;
+    width: 30%;
+    height: auto;
+}
+.imgblend{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    top: 45%;
+    left: 5.2vw;
+}
+.imgblendblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    top: 45%;
+    left: 5.2vw;
+}
+.imgblendpoorblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    top: 47%;
+    left: 5.2vw;
+}
+.imgtask{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    top: 65%;
+    left: 5.2vw;
+}
+.imgtaskblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    top: 65%;
+    left: 5.2vw;
+}
+.imgtaskpoorblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    top: 67%;
+    left: 5.2vw;
+}
+.imgalclion{
+    margin-top: 100vh;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.imgalccat{
+    margin-top: 100vh;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.imgstar2{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.imgstar3{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.imgstar4{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.imgachievement1{
+    margin-top: 200vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+.imgachievement2{
+    margin-top: 110vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
