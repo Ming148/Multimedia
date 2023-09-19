@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 362px 1800px 1024px 1080px 920px 1080px 920px 500px 1750px 772px 960px;
+    width: 100%;
+}
+
+.header_newspaper {
+    display: grid;
+    width: 100%;
+    background: #DC5632;
+}
+
+#head {
+    margin: auto;
+}
+
+.part1 {
+    background: #F3F1DD;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 48px;
+}
+
+.text_part1_1 {
+    margin-top: 100px;
+}
+
+.text_part1_2 {
+    grid-column: 1 / span 2;
+    margin: auto;
+
+}
+
+#pic_part1 {
+    width: 40%;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.part2 {
+    background: #D2D4D4;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+
+.part3 {
+    background: #38424A;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+
+.part4 {
+    background: #608E61;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+
+.part5 {
+    position: relative;
+    background: lightgrey;
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(3, auto);
+}
+
+.text_part5 {
+    margin-top: 100px;
+}
+
+#pic_part5_1 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 25%;
+    margin: auto;
+}
+
+#pic_part5_2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+    bottom: 0;
+    width: 15%;
+    margin: auto;
+}
+
+.part6 {
+    background: #3C87C9;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.part7 {
+    background: #F3F1DD;
+    text-align: center;
+    display: grid;
+}
+
+.text_part7 {
+    margin-top: 50px;
+}
+
+.card {
+    display: inline;
+}
+
+.part8 {
+    background: #3C87C9;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+}
+
+.text_part8_2 {
+    display: grid;
+    margin: auto;
+    grid-template-rows: 150px auto;
+}
+
+.part9 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #D2D4D4;
+
+}
+
+.text_part9_1 {
+    display: flex;
+    background: #2D6076;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_part9_2 {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.part10{
+    background-color: #38424A;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+#pic_part10_1{
+    margin: auto;
+}
+#pic_part10_2{
+    margin: auto;
+}
+#pic_part10_3{
+    margin: auto;
+}
