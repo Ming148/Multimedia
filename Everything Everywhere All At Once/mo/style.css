@@ -1,0 +1,478 @@
+body {
+    background-color: #3c87c9;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: auto;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* .all-imgs{
+    overflow-x: hidden;
+} */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    margin: 2rem 0 0 0;
+}
+
+.header {
+    font-weight: bolder;
+    font-size: 6rem;
+    color: #f3f1dd;
+}
+
+.header > p{
+    margin: 0;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #f3f1dd;
+}
+
+.sub-header > p{
+    margin: 0;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f3f1dd;
+    background: #db5632;
+    border-radius: 2rem;
+    border: 3px solid #f3f1dd;
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+
+.noti-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    color: #35424a;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    background: #f2f0dc;
+    border: 5px solid #d2d4d4;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: .7s all ease;
+}
+
+.noti-box.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+} */
+
+/* .reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+#circle {
+    margin: 1rem;
+}
+
+#pic-1 {
+    animation: leftright 3s alternate infinite;
+    width: 40%;
+}
+
+#pic-2 {
+    padding: 1.5rem;
+    width: 12%;
+}
+
+.pic-3-container {
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+}
+
+#pic-3-center{
+    width: 18rem;
+    position: absolute;
+    margin-top: 2rem;
+    animation: tilted 1s  alternate infinite ;
+    /* top: 39.8%; */
+}
+
+#pic-3-pole {
+    width: 7rem;
+    position: absolute;
+    margin-top: 5rem;
+    /* top: 41%; */
+}
+
+#pic-3-left {
+  width: 9rem;
+  position: absolute;
+  margin-top: 7rem;
+  margin-left: -17.5rem;
+  animation: updown-left 1s  alternate infinite ;
+  /* top: 41%; */
+}
+
+#pic-3-right {
+  width: 8rem;
+  position: absolute;
+  margin-top: 2.3rem;
+  margin-left: 17.5rem;
+  animation: updown-right 1s  alternate infinite ;
+  /* top: 41%; */
+}
+
+#pic-4 {
+    padding: 1.5rem;
+    width: 40%;
+}
+
+#lung-nid {
+    position: absolute;
+    width: 20%;
+    left: 7%;
+    top: 3%;
+}
+
+#kilo {
+    position: absolute;
+    width: 25%;
+    left: 72%;
+    top: -1%;
+}
+
+#iron {
+    position: absolute;
+    width: 40%;
+    left: -5%;
+    top: 20%;
+}
+
+#sungvein {
+    position: absolute;
+    width: 23%;
+    left: 67%;
+    top: 16%;
+}
+
+#maa-jai-dum {
+    position: absolute;
+    width: 23%;
+    left: 67%;
+    top: 35%;
+}
+
+#chalong{
+    position: absolute;
+    width: 18%;
+    left: 13%;
+    top: 40%;
+}
+
+footer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #f3f1dd;
+}
+
+.footer-dot{
+    margin: 0;
+}
+
+.footer-dot > p,
+.footer-phase1 > p,
+.footer-phase2 > p,
+.footer-phase3 > p {
+    margin: 0;
+}
+
+.footer-phase2 {
+    margin-top: 4rem;
+}
+
+.footer-phase3 {
+    margin-top: 10rem;
+}
+
+.quote {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: bolder;
+    font-size: 7rem;
+    color: #f3f1dd;
+    display: flex;
+    margin: 2rem 0 6rem 0;
+}
+
+.slide {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 1.5em;
+    margin-right: 2rem;
+}
+
+.slide > p {
+    text-align: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    animation: slide 5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.quote > p {
+    flex: 1;
+    margin: 0;
+    font-weight: 400;
+}
+
+.prachachon-mobile {
+    display: none;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  33% {
+    top: -1.5em;
+  }
+  66% {
+    top: -3em;
+  }
+  100% {
+    top: -4.5em;
+  }
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-10px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes tilted {
+  from{
+    transform: rotate(-2deg);
+  }
+  to{
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes updown-left {
+  from{
+    transform: translateY(5px);
+  }
+  to{
+    transform: translateY(-11px);
+  }
+}
+
+@keyframes updown-right {
+  from{
+    transform: translateY(-11px);
+  }
+  to{
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    font-size: 2.1rem;
+  }
+
+  .sub-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .date-box {
+    width: 60%;
+  }
+
+  #circle {
+    margin: 1rem 0.7rem;
+}
+
+  #pic-1 {
+    width: 85%;
+  }
+
+  .noti-box {
+    width: 81%;
+    font-size: 1rem;
+  }
+
+  .circle {
+    margin: 0.7rem;
+  }
+
+  #pic-2{
+    width: 30%;
+  }
+
+  #pic-3{
+    width: 70%;
+  }
+
+  #pic-4{
+    width: 85%;
+  }
+
+  footer{
+    font-size: 1rem;
+    margin-top: 6rem;
+  }
+
+  .footer-dot{
+    margin-bottom: 1rem;
+  }
+
+  .footer-phase2,
+  .footer-phase3 {
+    margin-top: 2rem;
+  }
+
+  .quote{
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  .quote > p {
+    display: none;
+  }
+
+  .slide {
+    margin: 3rem 2rem 0 0;
+  }
+
+  .prachachon-mobile {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #f3f1dd;
+    display: flex;
+    justify-content: end;
+    margin: 0 2rem 5rem 0;
+  }
+
+  .prachachon-mobile > p {
+    margin: 0;
+  }
+
+  #lung-nid {
+    width: 25%;
+    left: 78%;
+    top: 21%;
+  }
+
+  #kilo {
+    width: 24%;
+    left: 78%;
+    top: 1%;
+    transform: rotate(-35deg);
+  }
+  
+  #iron {
+    width: 28%;
+    left: -4%;
+    top: 1%;
+    transform: rotate(-5deg);
+  }
+
+  #sungvein {
+    width: 28%;
+    left: 82%;
+    top: 46%;
+    transform: rotate(40deg);
+}
+
+  #maa-jai-dum {
+    width: 35%;
+    left: -10%;
+    top: 22%;
+    transform: rotate(50deg);
+  }
+
+  #chalong {
+    display: none;
+  }
+
+  .pic-3-container {
+    height: 16rem;
+  }
+
+  #pic-3-center {
+    width: 12rem;
+    margin-top: 2rem;
+  }
+
+  #pic-3-pole {
+    width: 5rem;
+    margin-top: 4rem;
+  }
+
+  #pic-3-left {
+    width: 5.5rem;
+    margin-top: 5.5rem;
+    margin-left: -11.5rem;
+  }
+
+  #pic-3-right {
+    width: 5rem;
+    margin-top: 2.1rem;
+    margin-left: 11.6rem;
+  }
+
+}
