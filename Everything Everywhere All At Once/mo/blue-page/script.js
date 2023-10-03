@@ -14,5 +14,22 @@ function reveal() {
     }
   }
   
-  window.addEventListener("scroll", reveal);
-  
+function car() {
+  var cars = document.querySelectorAll("#pic-4");
+
+  for (var i = 0; i < cars.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = cars[i].getBoundingClientRect().top;
+    var elementVisible = 350;
+
+    if (elementTop < windowHeight - elementVisible) {
+      cars[i].classList.add("active");
+    } else {
+      cars[i].classList.remove("active");
+    }
+  }
+}  
+
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", car);

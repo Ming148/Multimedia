@@ -1,3 +1,50 @@
 body {
     margin: 0;
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("images/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#background {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#for-sale {
+    width: 14%;
+    z-index: 1;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+#forbidden {
+    width: 10%;
+    position: absolute;
+    left: 7.5%;
+    top: 46%;
+}
+
+#contra {
+    width: 17%;
+    position: absolute;
+    right: 3%;
+    top: 51%;
+}
+
+
+@media (max-width: 430px) {
+    #background {
+        
+    }
+}
