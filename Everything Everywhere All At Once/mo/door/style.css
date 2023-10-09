@@ -8,6 +8,8 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-color: #F2F0DC;
     /* background-image: url("images/background.svg");
     background-size: cover;
     background-repeat: no-repeat; */
@@ -21,11 +23,19 @@ body {
 }
 
 #for-sale {
-    width: 14%;
+    width: 15%;
     z-index: 1;
     position: absolute;
     margin-left: 3%;
     margin-top: 5%;
+
+    cursor: pointer;
+    transition: 0.3s;
+    animation: move 2s infinite ;
+}
+
+#for-sale:hover {
+    scale: 1.2;
 }
 
 #forbidden {
@@ -33,6 +43,7 @@ body {
     position: absolute;
     left: 7.5%;
     top: 46%;
+    z-index: 1;
 }
 
 #contra {
@@ -40,8 +51,99 @@ body {
     position: absolute;
     right: 3%;
     top: 51%;
+    z-index: 1;
 }
 
+#L-chain {
+    width: 36%;
+    position: absolute;
+    left: -5%;
+    top: -1%;
+}
+
+#R-chain {
+    width: 36%;
+    position: absolute;
+    right: -5.5%;
+    top: -2%;
+}
+
+.sale-popup {
+    background-color: rgba(0, 0, 0, 0.373);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.prevent-scroll {
+    overflow: hidden;
+}
+
+#lion {
+    width: 22%;
+    margin: 1rem 0 0.6rem 0;
+}
+
+#close-btn {
+    position: absolute;
+    right: 4%;
+    top: 8%;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    opacity: 0.7;
+}
+
+.popup-box {
+    position: relative;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    background: #F2F0DC;
+    border: 6px solid #3C87C9;
+    border-radius: 1.2rem;
+    padding: 1rem 4rem;
+    margin-bottom: 1rem;
+
+    animation: zoom 0.5s ;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes move {
+    0% {
+        transform: rotateZ(3deg);
+    }
+    50% {
+        transform: rotateZ(-4deg);
+    }
+    100% {
+        transform: rotateZ(3deg);
+    }
+}
 
 @media (max-width: 430px) {
     #background {
