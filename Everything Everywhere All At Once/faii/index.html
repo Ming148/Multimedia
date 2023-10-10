@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 2000;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    #activeElement {
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 5rem 0px 5rem 0px;
+        background: skyblue;
+
+    }
+
+    .lock {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        background: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="activeElement" class="activeElement"></div>
+        <div class="lock"></div>
+        <div id="activeElement" class="activeElement"></div>
+        <div class="lock"></div>
+        <div id="activeElement" class="activeElement"></div>
+        <div class="lock"></div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.addEventListener("scroll", activeElement);
+    let currentX = 0;
+
+    function activeElement() {
+        let el1 = document.querySelectorAll('.activeElement')
+        let el2 = document.querySelectorAll('.lock')
+        for (let i of el1) {
+            let scrolly = window.scrollY
+            let screenWidth = parseInt((window.innerWidth) / 2);
+            let active = true
+            if (scrolly >= screenWidth - 50) {
+                active = false
+            }
+            if (active) {
+                if (i.classList.contains('activeElement')) {
+                    currentX = scrolly;
+                    i.style.transform = `translateX(${currentX}px) translateY(${scrolly}px)`
+                } else {
+                    i.style.transform = `translateY(${scrolly}px)`
+                }
+            } else {
+                if (i.classList.contains('activeElement')) {
+                    i.style.transform = `translateX(${currentX}px) translateY(${scrolly}px)`
+                } else {
+                    i.style.transform = `translateY(${scrolly}px)`
+                }
+            }
+            for (let i of el2) {
+                i.style.transform = `translateY(${scrolly}px)`
+            }
+            console.log("scrolly : " + scrolly)
+            console.log("screenWidth : " + screenWidth)
+
+        }
+
+    }
+
+</script>
