@@ -1,0 +1,476 @@
+body{
+    background-color: #F2F0DC;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    margin:0;
+}
+.container{
+    position:relative;
+    margin:auto;
+    padding:0;
+    width:100%;
+    max-width: auto;
+    container-type: inline-size;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    height: 100vh;
+}
+#but{
+    font-size:70px;
+}
+#eh{
+    margin: 20px;
+    font-size: 1.5rem;
+    color:#3C86C8;
+}
+#paidoogun{
+    font-size: 96px;
+}
+#pic1{
+    position: absolute;
+    width:45%;
+    top:7%;
+    left: 72%;
+    animation: rotate1 4s linear alternate infinite ;
+}
+#pic2{
+    position: absolute;
+    width:45%;
+    top:43%;
+    left: -8%;
+    animation: rotate1 5s linear alternate infinite ;
+}
+
+#pic3{
+    display: none;
+}
+#pic4{
+    display:none;
+}
+#star1{
+    position: absolute;
+    top:2%;
+    left:20%;
+    width:3%;
+    animation: move1 3s ease alternate infinite;
+}
+#star2{
+    position: absolute;
+    top:2.5%;
+    left:68%;
+    width:4.5%;
+    animation: move2 4s ease alternate infinite;
+}
+
+#star3{
+    position: absolute;
+    top:25%;
+    left:-3%;
+    width:4%;
+    animation: move2 6s ease alternate infinite;
+}
+#star4{
+    position: absolute;
+    top:20%;
+    right:-3%;
+    width:4%;
+    animation: move1 5s ease alternate infinite;
+}
+#star5{
+    position: absolute;
+    top:36%;
+    left:21%;
+    width:2.5%;
+    animation: move1 4s ease alternate infinite;
+}
+#star6{
+    position: absolute;
+    top:38%;
+    left:85%;
+    width:2.5%;
+    animation: move2 6s ease alternate infinite;
+}
+#star7{
+    position: absolute;
+    top:53%;
+    right:-2%;
+    width:4%;
+    animation: move2 4s ease alternate infinite;
+}
+#star8{
+    position: absolute;
+    top:69%;
+    left:5%;
+    width:4%;
+    animation: move2 4s ease alternate infinite;
+    
+}
+#star9{
+    position: absolute;
+    top:79%;
+    left:12%;
+    width:3.5%;
+    animation: move1 3s ease alternate infinite ;
+}
+#star10{
+    position: absolute;
+    top:90%;
+    right:5%;
+    width: 4%;
+    animation: move2 4s ease alternate infinite;
+}
+
+
+.texttitle{
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.slidebar{
+    height:100%;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mini-container{
+    position: relative;
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.textslidehead{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.vs-text{
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgb(220, 86, 50);
+}
+.imglionicon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+    width: 70%;
+    height: auto;
+}
+.imgcaticon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+    width: 56%;
+    height: auto;
+}
+.textslide{
+    text-align: center;
+    margin-top: 25vh;
+    font-size: 1.25rem;
+    color: rgb(60, 135, 201);
+}
+.imgmoney{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 25%;
+    height: auto;
+}
+.imgmoneyblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    top: 25%;
+}
+.imgcoinblack{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25%;
+    width: 55%;
+    left:22%;
+    height: auto;
+}
+.imgblend{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    top: 45%;
+    
+}
+.imgblendblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    top: 45%;
+    
+}
+.imgblendpoorblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    top: 46.3%;
+}
+.imgtask{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    top: 70%;
+    left:10%;
+}
+.imgtaskblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    top: 70%;
+    left:10%;
+}
+.imgtaskpoorblack{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    top: 70%;
+    left:10%;
+}
+.imgalclion{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    top: 93%;
+    left: 6.2vw;
+}
+.imgalccat{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    top: 93%;
+    left: 6.2vw;
+}
+.imgstar2{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    top: 95.2%;
+    left: 14.9vw;
+}
+.imgstar3{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    top: 93.5%;
+    left: -3vw;
+}
+.imgstar4{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    top: 94%;
+    left: 16.2vw;
+}
+.imgachievement1{
+    position:absolute;
+    top:44%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.imgachievement2{
+    position:absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top:68.5%;
+    height: auto;
+}
+.scrollbar-container{
+    margin: auto;
+    position: relative;
+    height: 1600vh; 
+    width: 100%;
+}
+
+.raceBar {
+    position: absolute;
+    padding-top: 20%;
+    width: 100%;
+    height: 94%;
+    display: flex;
+    justify-content: space-around;
+    gap:7%;
+  }
+
+  .progressBar, .fakeProgressBar {
+    width: 7%;
+    height: 100%;
+    background-color: #D2D4D4;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress{
+    width: 100%;
+    height: 0%;
+    background-color: #96c896;
+    position: absolute;
+    top: 0;
+    transition: all 0.1s ease-out;
+  }
+
+@container (width<400px){
+    .text1{
+        font-size:1rem;
+        height:25vh;
+        justify-content :start;
+        padding-top:10vh
+    }
+    #eh{
+        font-size:0.5rem;
+        margin: 0;
+    }
+    #but{
+        font-size:1rem;
+    }
+    #paidoogun{
+        font-size:3rem;
+    }
+    #pic1{
+        top:15%;
+    }
+    #pic2{
+        width:50%;
+        left:-22%;
+    }
+    #pic3{
+        display:flex;
+        position:absolute;
+        width:17%;
+        top: 14%;
+        left:7%;
+        animation: rotate2 3s linear alternate infinite ;
+    }
+    #pic4{
+        display:flex;
+        position:absolute;
+        width:22%;
+        top: 67%;
+        left:70%;
+        animation: rotate3 3s linear alternate infinite ;
+    }
+    #star1,#star2,#star3,#star4,#star5,#star6,#star7,#star8,#star8,#star9,#star10{
+        animation:none;
+    }
+    .cont{
+        font-size:1rem;
+    }
+    .texttitle{
+        font-size: 1.5rem;
+    }
+    .textslidehead{
+        font-size: 1.5rem;
+    }
+    .vs-text{
+       font-size: 2rem;
+    }
+}
+
+
+@keyframes rotate1{
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+@keyframes rotate2{
+    from{
+        transform: rotate(-20deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}
+@keyframes rotate3{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(35deg);
+    }
+}
+@keyframes move1{
+    from{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(20px,5px);
+    }
+}
+@keyframes move2{
+    from{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(9px,25px);
+    }
+}
+@media(width<=430px){
+    .container{
+        max-width: 350px;
+    }
+
+}
