@@ -471,6 +471,17 @@ footer {
   }
 }
 
+@media (max-width: 650px) {
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .sub-header {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
 @media (max-width: 430px) {
   .header {
     font-size: 2.1rem;
