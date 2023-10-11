@@ -8,7 +8,7 @@ document.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const offset = progressBarTop - bodyTop;
   if (offset - scrollY < 100 && offset - scrollY > -progressBarHeight) {
-    const percent = Math.round((scrollY - offset) / progressBarHeight * 100) + 4;
+    const percent = Math.round((scrollY - offset) / progressBarHeight * 100) + 6;
     progress.style.height = `${percent}%`;
   } else if (offset - scrollY >= -50) {
     progress.style.height = '0%';

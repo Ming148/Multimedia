@@ -175,6 +175,7 @@ body{
     height: auto;
 }
 .textslide{
+    position: absolute;
     text-align: center;
     margin-top: 25vh;
     font-size: 1.25rem;
@@ -318,6 +319,15 @@ body{
     top: 94%;
     left: 16.2vw;
 }
+.imgachievement{
+    position:absolute;
+    top:23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
 .imgachievement1{
     position:absolute;
     top:44%;
@@ -339,15 +349,17 @@ body{
 .scrollbar-container{
     margin: auto;
     position: relative;
-    height: 1600vh; 
+    height: 1250vh; 
     width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 30px;
 }
 
 .raceBar {
     position: absolute;
     padding-top: 20%;
     width: 100%;
-    height: 94%;
+    height: 92%;
     display: flex;
     justify-content: space-around;
     gap:7%;
@@ -369,7 +381,37 @@ body{
     top: 0;
     transition: all 0.1s ease-out;
   }
-
+  #textslide1{
+    position:absolute;
+    font-size:2.5rem;
+    top:12.5%;
+    width:100%;
+  }
+  #textslide2{
+    position:absolute;
+    font-size:2.3rem;
+    top:35%;
+    width:100%;
+  }
+  #textslide3{
+    position:absolute;
+    font-size:2.3rem;
+    top:60%;
+    width:100%;
+  }
+  #textslide4{
+    position:absolute;
+    font-weight: bold;
+    color:#DB5632 ;
+    line-height: 10rem;
+    text-align: center;
+    font-size:4rem;
+    top:80%;
+    width:100%;
+  }
+p{
+    margin: 0;
+}
 @container (width<400px){
     .text1{
         font-size:1rem;
@@ -385,6 +427,7 @@ body{
         font-size:1rem;
     }
     #paidoogun{
+        padding-top:10vh;
         font-size:3rem;
     }
     #pic1{
@@ -425,6 +468,66 @@ body{
     .vs-text{
        font-size: 2rem;
     }
+    .raceBar{
+        padding-top: 30%;
+    }
+    .textslide{
+        left:-25%;
+        font-size:0.4rem;
+        width:150%;
+    }
+    #textslide1{
+        font-size:0.65rem;
+    }
+    #textslide2{
+        font-size:0.65rem;
+    }
+    #textslide3{
+        font-size:0.6rem; 
+    }
+    #textslide4{
+        font-size:1.5rem; 
+        line-height: 6rem;
+    }
+    .imgblendpoorblack{
+        top:45.5%;
+    }
+    .scrollbar-container{
+        height:800vh;
+    }
+    .imgalccat{
+        left:9%;
+        width:80%;
+        top:95%;
+    }
+    .imgalclion{
+        left:9%;
+        width:80%;
+        top:94.8%;
+    }
+    .imgstar2{
+        width:60%;
+        top:96.8%;
+    }
+    .imgstar3{
+        width:120%;
+        left:-40%;
+        top:95.2%;
+    }
+    .imgstar4{
+        left:75%;
+        width:45%;
+        top:95.8%;
+    }
+    .imgblend,.imgblendblack,.imgblendpoorblack,.imgmoney,.imgmoneyblack{
+        width:120%;
+        left:-10%;
+    }
+    .imgcoinblack{
+        width:75%;
+        left:10%;
+    }
+
 }
 
 
@@ -470,7 +573,7 @@ body{
 }
 @media(width<=430px){
     .container{
-        max-width: 350px;
+        max-width: 390px;
     }
 
 }
