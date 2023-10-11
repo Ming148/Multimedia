@@ -113,7 +113,7 @@ body {
 
 #pic-2 {
     padding: 1.5rem;
-    width: 12%;
+    width: 15%;
 }
 
 .pic-3-container {
@@ -163,6 +163,8 @@ body {
     transform: translateX(120%);
     opacity: 0;
     transition: .35s linear;
+
+    
 }
 
 #pic-4.active {
@@ -336,6 +338,15 @@ footer {
   }
 }
 
+@keyframes car{
+  from{
+      transform: translate(0px,0px);
+  }
+  to{
+      transform: translate(8px,10px);
+  }
+}  
+
 @media (max-width: 1024px) {
   .header {
     font-size: 6rem;
@@ -359,10 +370,6 @@ footer {
 
   #pic-2{
     width: 20%;
-  }
-
-  #pic-3{
-    width: 60%;
   }
 
   #pic-4{
@@ -427,6 +434,10 @@ footer {
 
   #kilo {
     left: 82%;
+  }
+
+  #pic-2 {
+    width: 30%;
   }
 
   footer{
@@ -510,7 +521,7 @@ footer {
   }
 
   #pic-2{
-    width: 30%;
+    width: 45%;
   }
 
   #pic-3{

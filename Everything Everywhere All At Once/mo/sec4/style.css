@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container {
+.container-door {
     width: 100%;
     display: flex;
     position: relative;
@@ -161,7 +161,7 @@ body {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 820px) {
     #background {
         display: none;
     }
@@ -179,7 +179,8 @@ body {
     #chain {
         display: flex;
         position: absolute;
-        width: 130%;
+        top: 6%;
+        width: 100%;
     }
 
     #bg-board {
@@ -190,13 +191,29 @@ body {
     #green-board {
         display: flex;
         position: absolute;
-        width: 85%;
-        z-index: 1;
+        width: 68%;
+        top: 8.8%;
     }
 
     #for-sale {
         width: 40%;
-        z-index: 2;
+        top: 38%;
     }
 
+    .popup-box {
+        width: 50%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+        z-index: 1;
+    }
+
+    #lion {
+        width: 35%;
+    }
+
+    #close-btn{
+        top: 5%;
+    }
 }
