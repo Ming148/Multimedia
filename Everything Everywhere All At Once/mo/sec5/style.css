@@ -2,18 +2,21 @@ body {
     margin: 0;
 }
 
-.sec5 {
+.sec-5 {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #F09B5C;
+    overflow: hidden;
 }
 
-.header {
+.sec5-header {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 6rem 0;
+    gap: 6rem;
+    margin-bottom: 10rem;
     /* margin: 6rem 2rem; */
 }
 
@@ -32,12 +35,129 @@ body {
 
 .header-unlock {
     position: relative;
+    display: flex;
+    width: 25%;
 }
 
 #star {
+    position: absolute;
+    left: 24%;
+    top: -3%;
 }
 
 #lock {
     position: absolute;
     z-index: 1;
+}
+
+.sec5-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unlock-box {
+    width: 740px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    background: #f2f0dc;
+    border: 10px solid #d2d4d4;
+    border-radius: 4rem;
+    /* padding: 0.3rem; */
+    margin-bottom: 15rem;
+}
+
+.unlock-box > p {
+    margin: 1.5rem 2.5rem 1.5rem 12rem;
+}
+
+#beer {
+    width: 33%;
+    position: absolute;
+    bottom: 10%;
+    left: -11%;
+}
+
+#farmer {
+    width: 25%;
+    position: absolute;
+    bottom: 8%;
+    left: -3%;
+}
+
+#money {
+    width: 25%;
+    position: absolute;
+    bottom: 13%;
+    left: -3%;
+}
+
+#bottle {
+    width: 28%;
+    position: absolute;
+    bottom: 8%;
+    left: -6%;
+}
+
+#judge {
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+    left: -6%;
+}
+
+@media (max-width: 430px) {
+    .sec5-header {
+        gap: 1rem;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .text-header-unlock {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .header-unlock {
+        width: 20%;
+        align-items: center;
+    }
+
+    #star {
+        width: 80%;
+        left: 30%;
+        top: 10%;
+    }
+
+    #lock {
+        width: 80%;
+    }
+
+    .unlock-box{ 
+        width: 310px;
+        /* width: 80%; */
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1.1rem;
+        border: 5px solid #d2d4d4;
+        border-radius: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .unlock-box > p {
+        margin: 0.5rem 0.4rem 0.5rem 5rem;
+    }
+
+    #beer {
+        width: 30%;
+        left: -8%;
+    }
 }
