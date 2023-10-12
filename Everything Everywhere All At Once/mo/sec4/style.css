@@ -71,6 +71,8 @@ body {
     position: absolute;
     left: -5%;
     top: -1%;
+
+    animation: L-chain .6s infinite alternate;
 }
 
 #R-chain {
@@ -78,10 +80,13 @@ body {
     position: absolute;
     right: -5.5%;
     top: -2%;
+
+    animation: R-chain .7s infinite alternate;
 }
 
 #chain {
     display: none;
+    animation: L-chain .6s infinite alternate;
 }
 
 .sale-popup {
@@ -158,6 +163,30 @@ body {
     }
     100% {
         transform: rotateZ(3deg);
+    }
+}
+
+@keyframes L-chain {
+    0% {
+        transform: translate(-3px,-2px);
+    }
+    50% {
+        transform: translate(3px,2px);
+    }
+    100% {
+        transform: translate(-5px,0px);
+    }
+}
+
+@keyframes R-chain {
+    0% {
+        transform: translate(-5px,0px);
+    }
+    50% {
+        transform: translate(3px,2px);
+    }
+    100% {
+        transform: translate(-3px,-2px);
     }
 }
 

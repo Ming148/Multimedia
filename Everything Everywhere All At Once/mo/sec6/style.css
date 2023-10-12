@@ -1,18 +1,16 @@
 body {
-    background-color: #3c87c9;
     margin: 0;
 }
 
+.sec-6 {
+    background-color: #3c87c9;
+}
 .container {
     position: relative;
     max-width: auto;
     margin: 0;
     overflow: hidden;
 }
-
-/* .all-imgs{
-    overflow-x: hidden;
-} */
 
 .title {
     display: flex;
@@ -88,18 +86,6 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-
-/* .reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-} */
-
-/* .reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-} */
 
 #circle {
     margin: 1rem;
@@ -511,12 +497,14 @@ footer {
   }
 
   #circle {
-    margin: 1rem 0.7rem;
+    margin: 1rem .7rem;
   }
 
   .noti-box {
     width: 81%;
-    font-size: 1rem;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0.2rem;
   }
 
   #pic-2{
