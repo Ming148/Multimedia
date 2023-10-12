@@ -37,12 +37,12 @@ body {
 .header-unlock {
     position: relative;
     display: flex;
-    width: 25%;
+    width: 16%;
 }
 
 #star {
     position: absolute;
-    left: 24%;
+    left: 30%;
     top: -3%;
 }
 
@@ -61,15 +61,15 @@ body {
 }
 
 .unlock-box {
-    width: 740px;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
     font-family: "Noto Sans Thai Looped", sans-serif;
     color: #000;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 3rem;
     background: #f2f0dc;
     border: 10px solid #d2d4d4;
     border-radius: 4rem;
@@ -78,7 +78,8 @@ body {
 }
 
 .unlock-box > p {
-    margin: 1.5rem 2.5rem 1.5rem 12rem;
+    margin: 1.5rem 5rem 1.5rem 15rem;
+    padding-left: 2rem;
 }
 
 #beer {
@@ -123,14 +124,14 @@ body {
 }
 
 .unlock-bar {
-    width: 45%;
+    width: 40%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Noto Sans Thai", sans-serif;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     border: 3.5px solid #ffffff;
     border-radius: 1.2rem;
@@ -145,6 +146,103 @@ body {
 #slide {
     position: absolute;
     left: 1.5%;
+
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+    .header-unlock {
+        width: 20%;
+    }
+
+    .unlock-box {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 12rem; 
+        padding-left: 0;
+    }
+
+    .unlock-bar {
+        width: 45%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .unlock-box {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 10rem; 
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-unlock {
+        width: 25%;
+    }
+
+    .sec5-header{
+        gap: 4.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .unlock-box {
+        width: 65%;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .text-header-unlock {
+        font-size: 5.8rem;
+        line-height: 7rem;
+    }
+
+    #lock {
+        width: 80%;
+    }
+
+    #star {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec5-header{
+        gap: 3rem;
+    }
+
+    .text-header-unlock {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    .unlock-box{ 
+        /* width: 310px; */
+        width: 72%;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 8rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 9rem;
+    }
+    
+    .unlock-bar {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    #slide {
+        left: 2.5%;
+    }
 }
 
 @media (max-width: 430px) {
@@ -176,14 +274,14 @@ body {
     }
 
     .unlock-box{ 
-        width: 310px;
-        /* width: 80%; */
+        /* width: 310px; */
+        width: 80%;
         font-size: 0.8rem;
         font-weight: 500;
         line-height: 1.1rem;
         border: 5px solid #d2d4d4;
         border-radius: 2rem;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
 
     .unlock-box > p {
@@ -193,5 +291,45 @@ body {
     #beer {
         width: 30%;
         left: -8%;
+    }
+
+    .unlock-bar{
+        /* width: 300px; */
+        width: 80%;
+        font-size: .7rem;
+        font-weight: 300;
+        margin: 15rem 0 3rem 0;
+        border-radius: .8rem;
+        border: 3px solid #ffffff;
+    /* padding: 0.3rem; */
+    }
+
+    .unlock-bar > p {
+        margin: 1rem 0;
+    }
+
+    #slide {
+        width: 15%;
+        left: 3%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-header-unlock {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .sec5-header {
+        margin-bottom: 2rem;
+    }
+
+    .unlock-box > p {
+        margin: 0.5rem 0.4rem 0.5rem 4.5rem;
+    }
+
+    .unlock-box {
+        font-size: .65rem;
+        line-height: 1rem;
     }
 }

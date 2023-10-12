@@ -24,7 +24,7 @@ body {
 
 .header {
     font-weight: bolder;
-    font-size: 6rem;
+    font-size: 6.5rem;
     color: #f3f1dd;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .sub-header {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #f3f1dd;
 }
 
@@ -54,29 +54,28 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Noto Sans Thai", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #f3f1dd;
     background: #db5632;
     border-radius: 2rem;
     border: 3px solid #f3f1dd;
-    padding: 0.2rem;
+    padding: 0.3rem;
     margin-top: 1rem;
 }
 
 .noti-box {
-    width: 30%;
+    width: 31%;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: "Noto Sans Thai Looped", sans-serif;
     color: #35424a;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     background: #f2f0dc;
     border: 5px solid #d2d4d4;
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
 
     position: relative;
