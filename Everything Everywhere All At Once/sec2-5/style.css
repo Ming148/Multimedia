@@ -657,6 +657,8 @@ p{
     position: absolute;
     left: -5%;
     top: -1%;
+
+    animation: L-chain .6s infinite alternate;
 }
 
 #R-chain {
@@ -664,16 +666,19 @@ p{
     position: absolute;
     right: -5.5%;
     top: -2%;
+
+    animation: R-chain .7s infinite alternate;
 }
 
 #chain {
     display: none;
+    animation: L-chain .6s infinite alternate;
 }
 
 .sale-popup {
     background-color: rgba(0, 0, 0, 0.373);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -747,6 +752,30 @@ p{
     }
 }
 
+@keyframes L-chain {
+    0% {
+        transform: translate(-3px,-2px);
+    }
+    50% {
+        transform: translate(3px,2px);
+    }
+    100% {
+        transform: translate(-5px,0px);
+    }
+}
+
+@keyframes R-chain {
+    0% {
+        transform: translate(-5px,0px);
+    }
+    50% {
+        transform: translate(3px,2px);
+    }
+    100% {
+        transform: translate(-3px,-2px);
+    }
+}
+
 @media (max-width: 820px) {
     #background {
         display: none;
@@ -801,5 +830,337 @@ p{
 
     #close-btn{
         top: 5%;
+    }
+}
+
+.sec-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F09B5C; 
+        
+    overflow: hidden;
+}
+
+.sec5-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem 0;
+    gap: 6rem;
+    margin-bottom: 10rem;
+    /* margin: 6rem 2rem; */
+}
+
+.text-header-unlock {
+    color: #000;
+    text-align: end;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: bolder;
+    font-size: 8rem;
+    line-height: 9rem;
+}
+
+.text-header-unlock > p {
+    margin: 0;
+}
+
+.header-unlock {
+    position: relative;
+    display: flex;
+    width: 16%;
+}
+
+#star {
+    position: absolute;
+    left: 30%;
+    top: -3%;
+}
+
+#lock {
+    position: absolute;
+    z-index: 1;
+}
+
+.sec5-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    background: linear-gradient(0deg, #000 0%, #F09B5C 30%);
+}
+
+.unlock-box {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    background: #f2f0dc;
+    border: 10px solid #d2d4d4;
+    border-radius: 4rem;
+    /* padding: 0.3rem; */
+    margin-bottom: 15rem;
+}
+
+.unlock-box > p {
+    margin: 1.5rem 5rem 1.5rem 15rem;
+    padding-left: 2rem;
+}
+
+#beer {
+    width: 33%;
+    position: absolute;
+    bottom: 10%;
+    left: -11%;
+}
+
+#farmer {
+    width: 25%;
+    position: absolute;
+    bottom: 8%;
+    left: -3%;
+}
+
+#money {
+    width: 25%;
+    position: absolute;
+    bottom: 13%;
+    left: -3%;
+}
+
+#bottle {
+    width: 28%;
+    position: absolute;
+    bottom: 8%;
+    left: -6%;
+}
+
+#judge {
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+    left: -6%;
+}
+
+.sec5-footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.unlock-bar {
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: 3.5px solid #ffffff;
+    border-radius: 1.2rem;
+    margin: 15rem 0 7rem 0;
+    /* padding: 0.3rem; */
+}
+
+.unlock-bar > p {
+    margin: 1.5rem 0;
+}
+
+#slide {
+    position: absolute;
+    left: 1.5%;
+
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+    .header-unlock {
+        width: 20%;
+    }
+
+    .unlock-box {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 12rem; 
+        padding-left: 0;
+    }
+
+    .unlock-bar {
+        width: 45%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .unlock-box {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 10rem; 
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-unlock {
+        width: 25%;
+    }
+
+    .sec5-header{
+        gap: 4.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .unlock-box {
+        width: 65%;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .text-header-unlock {
+        font-size: 5.8rem;
+        line-height: 7rem;
+    }
+
+    #lock {
+        width: 80%;
+    }
+
+    #star {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec5-header{
+        gap: 3rem;
+    }
+
+    .text-header-unlock {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    .unlock-box{ 
+        /* width: 310px; */
+        width: 72%;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 8rem;
+    }
+
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 9rem;
+    }
+    
+    .unlock-bar {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    #slide {
+        left: 2.5%;
+    }
+}
+
+@media (max-width: 430px) {
+    .sec5-header {
+        gap: 1rem;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .text-header-unlock {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .header-unlock {
+        width: 20%;
+        align-items: center;
+    }
+
+    #star {
+        width: 80%;
+        left: 30%;
+        top: 10%;
+    }
+
+    #lock {
+        width: 80%;
+    }
+
+    .unlock-box{ 
+        /* width: 310px; */
+        width: 80%;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1.1rem;
+        border: 5px solid #d2d4d4;
+        border-radius: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .unlock-box > p {
+        margin: 0.5rem 0.4rem 0.5rem 5rem;
+    }
+
+    #beer {
+        width: 30%;
+        left: -8%;
+    }
+
+    .unlock-bar{
+        /* width: 300px; */
+        width: 80%;
+        font-size: .7rem;
+        font-weight: 300;
+        margin: 15rem 0 3rem 0;
+        border-radius: .8rem;
+        border: 3px solid #ffffff;
+    /* padding: 0.3rem; */
+    }
+
+    .unlock-bar > p {
+        margin: 1rem 0;
+    }
+
+    #slide {
+        width: 15%;
+        left: 3%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-header-unlock {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .sec5-header {
+        margin-bottom: 2rem;
+    }
+
+    .unlock-box > p {
+        margin: 0.5rem 0.4rem 0.5rem 4.5rem;
+    }
+
+    .unlock-box {
+        font-size: .65rem;
+        line-height: 1rem;
     }
 }
