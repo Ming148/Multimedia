@@ -76,13 +76,14 @@ body {
 .part2 {
     background: #D2D4D4;
     height: 120vh;
+    display: grid;
 }
 .text_part2{
     text-align: center;
+    margin: auto;
 }
 #text_part2{
-    width: 50%;
-    margin-top: 20vh;
+    width: 100%;
 }
 /*-----------------------------------------*/
 
@@ -90,16 +91,16 @@ body {
 .part3 {
     background: #38424A;
     height: 150vh;
-    margin: auto;
+    display: grid;
 }
 
 .text_part3{
     text-align: center;
+    margin: auto;
 }
 
 #text_part3{
-    width: 40%;
-    margin-top: 50vh;
+    width: 100%;
 }
 /*-----------------------------------------*/
 
@@ -112,11 +113,11 @@ body {
 
 .text_part4{
     text-align: center;
+    margin: auto;
 }
 
 #text_part4{
-    width: 40%;
-    margin-top: 20vh;
+    width: 100%;
 }
 /*-----------------------------------------*/
 
@@ -230,10 +231,10 @@ body {
     margin: auto;
     grid-gap: 2rem;
 }
-/*
+
 #card1, #card2, #card3, #card4, #card5{
     width: 100%;
-} */
+}
 
 .card{
     position: relative;
@@ -371,16 +372,12 @@ body {
         height: 80vh;
     }
 
-    #text_part3{
-        margin-top: 30vh;
+    #text_part3, #text_part2, #text_part4{
+        width: 80%;
     }
 
     .part4{
         height: 60vh;
-    }
-
-    #text_part4{
-        margin-top: 15vh;
     }
 
     .part5{
@@ -474,16 +471,12 @@ body {
         height: 60vh;
     }
 
-    #text_part3{
-        margin-top: 20vh;
+    #text_part2, #text_part3, #text_part4{
+        width: 60%;
     }
 
     .part4{
         height: 50vh;
-    }
-
-    #text_part4{
-        margin-top: 15vh;
     }
 
     #text_part5{
@@ -590,18 +583,12 @@ body {
         height: 40vh;
     }
 
-    #text_part2{
-        margin-top: 10vh;
+    #text_part2, #text_part3, #text_part4{
+        width: 45%;
     }
 
-    #text_part3{
-        margin-top: 12vh;
-    }
     .part4{
-        height: 20vh;
-    }
-    #text_part4{
-        margin-top: 2.5vh;
+        height: 25vh;
     }
 
     #text_part5{
@@ -653,12 +640,12 @@ body {
     }
 
     #text_part9_1{
-        width: 90%;
+        width: 80%;
     }
 
     #text_part9_2{
         margin-left: 1rem;
-        width: 90%;
+        width: 80%;
     }
 
     .part10{
