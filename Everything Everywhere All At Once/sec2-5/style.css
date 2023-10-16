@@ -956,8 +956,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F09B5C;
-
+    background-color: #F09B5C; 
     overflow: hidden;
 }
 
@@ -980,7 +979,7 @@ p {
     line-height: 9rem;
 }
 
-.text-header-unlock>p {
+.text-header-unlock > p {
     margin: 0;
 }
 
@@ -1001,15 +1000,6 @@ p {
     z-index: 1;
 }
 
-.sec5-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    background: linear-gradient(0deg, #000 0%, #F09B5C 30%);
-}
-
 .unlock-box {
     width: 50%;
     position: relative;
@@ -1027,7 +1017,7 @@ p {
     margin-bottom: 15rem;
 }
 
-.unlock-box>p {
+.unlock-box > p {
     margin: 1.5rem 5rem 1.5rem 15rem;
     padding-left: 2rem;
 }
@@ -1089,7 +1079,7 @@ p {
     /* padding: 0.3rem; */
 }
 
-.unlock-bar>p {
+.unlock-bar > p {
     margin: 1.5rem 0;
 }
 
@@ -1110,8 +1100,8 @@ p {
         line-height: 2.5rem;
     }
 
-    .unlock-box>p {
-        margin: 1.5rem 2.5rem 1.5rem 12rem;
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 12rem; 
         padding-left: 0;
     }
 
@@ -1127,8 +1117,8 @@ p {
         line-height: 2.3rem;
     }
 
-    .unlock-box>p {
-        margin: 1.5rem 2.5rem 1.5rem 10rem;
+    .unlock-box > p {
+        margin: 1.5rem 2.5rem 1.5rem 10rem; 
         padding-left: 0;
     }
 }
@@ -1138,7 +1128,7 @@ p {
         width: 25%;
     }
 
-    .sec5-header {
+    .sec5-header{
         gap: 4.5rem;
         margin-bottom: 7rem;
     }
@@ -1164,7 +1154,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    .sec5-header {
+    .sec5-header{
         gap: 3rem;
     }
 
@@ -1173,7 +1163,7 @@ p {
         line-height: 5rem;
     }
 
-    .unlock-box {
+    .unlock-box{ 
         /* width: 310px; */
         width: 72%;
         font-size: 1.2rem;
@@ -1181,10 +1171,10 @@ p {
         margin-bottom: 8rem;
     }
 
-    .unlock-box>p {
+    .unlock-box > p {
         margin: 1.5rem 2.5rem 1.5rem 9rem;
     }
-
+    
     .unlock-bar {
         width: 60%;
         font-size: 1rem;
@@ -1193,6 +1183,16 @@ p {
     #slide {
         left: 2.5%;
     }
+
+    .key {
+        width: 10px;
+    }
+    
+    #unlock {
+        width: 60px;
+    
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -1223,7 +1223,7 @@ p {
         width: 80%;
     }
 
-    .unlock-box {
+    .unlock-box{ 
         /* width: 310px; */
         width: 80%;
         font-size: 0.8rem;
@@ -1234,7 +1234,7 @@ p {
         margin-bottom: 4rem;
     }
 
-    .unlock-box>p {
+    .unlock-box > p {
         margin: 0.5rem 0.4rem 0.5rem 5rem;
     }
 
@@ -1243,7 +1243,7 @@ p {
         left: -8%;
     }
 
-    .unlock-bar {
+    .unlock-bar{
         /* width: 300px; */
         width: 80%;
         font-size: .7rem;
@@ -1251,10 +1251,10 @@ p {
         margin: 15rem 0 3rem 0;
         border-radius: .8rem;
         border: 3px solid #ffffff;
-        /* padding: 0.3rem; */
+    /* padding: 0.3rem; */
     }
 
-    .unlock-bar>p {
+    .unlock-bar > p {
         margin: 1rem 0;
     }
 
@@ -1274,13 +1274,83 @@ p {
         margin-bottom: 2rem;
     }
 
-    .unlock-box>p {
+    .unlock-box > p {
         margin: 0.5rem 0.4rem 0.5rem 4.5rem;
     }
 
     .unlock-box {
         font-size: .65rem;
         line-height: 1rem;
+    }
+}
+
+/*=============================================*/
+.popup-center{
+    justify-content: center;
+    align-items: center;
+}
+
+
+#unlock-content{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    background: linear-gradient(0deg, #000 0%, #F09B5C 30%);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 15rem;
+    position:relative;
+}
+
+#key-pic {
+    align-self: center;
+    justify-self: end;
+    width: 20%;
+    opacity: 0;
+    transform:translate(-340%, 55%);
+    transition: .35s linear;
+}
+
+#lock-pic {
+    width: 15%;
+
+}
+
+#unlock-box{
+    position: absolute;
+    justify-self: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.25s ease-in;
+}
+
+#key-pic.active {
+    transform: translate(50%, 55%);
+    opacity: 1;
+}
+
+#unlock-box.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#lock-pic.fade-out{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+@keyframes unlock-animation {
+    0% {
+        background-image: url(frame1.png);
+    }
+
+    50% {}
+
+    100% {
+        background-image: url(frame1.png);
     }
 }
 
