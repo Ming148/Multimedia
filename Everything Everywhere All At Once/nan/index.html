@@ -145,21 +145,13 @@
         <img id="pic_part10_1" src="assets/Images/sec_1 _left.svg" alt="">
         <img id="pic_part10_2" src="assets/Images/sec_1_center.svg" alt="">
         <img id="pic_part10_3" src="assets/Images/sec_1_right.svg" alt="">
+        <div class="next_page">
+            <p class="next">อ่านต่อ ที่นี่</p>
+            <img id="arrow" src="assets/Images/arrow_white.svg" alt="">
+            <img id="arrow_res" src="assets/Images/arrow.svg" alt="">
+        </div>
     </div>
 
 </body>
-<script>
-    var cards = document.querySelectorAll('.card');
-
-    [...cards].forEach((card) => {
-        card.addEventListener('click', function () {
-            card.classList.toggle('is-flipped');
-        });
-    });
-
-    window.addEventListener('scroll', () => {
-        document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-    }, false);
-</script>
-
+<script src="script.js"></script>
 </html>
