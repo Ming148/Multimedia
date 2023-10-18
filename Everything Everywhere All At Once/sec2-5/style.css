@@ -1441,11 +1441,11 @@ p {
     }
 
     10% {
-        transform: rotate(-2deg);
+        transform: rotate(-3deg);
     }
 
     20% {
-        transform: rotate(2deg);
+        transform: rotate(3deg);
     }
 
     30% {
@@ -1453,11 +1453,11 @@ p {
     }
 
     40% {
-        transform: rotate(2deg);
+        transform: rotate(3deg);
     }
 
     50% {
-        transform: rotate(-2deg);
+        transform: rotate(-3deg);
     }
 
     60% {
@@ -1465,21 +1465,44 @@ p {
     }
 
     70% {
-        transform: rotate(-2deg);
+        transform: rotate(-3deg);
     }
 
     80% {
-        transform: rotate(2deg);
+        transform: rotate(3deg);
     }
 
     90% {
-        transform: rotate(-1deg);
+        transform: rotate(-3deg);
     }
 
     100% {
         transform: rotate(0deg);
     }
 }
+
+
+
+
+@media screen and (max-width: 1633px) {
+
+    .title {
+        background-size: cover;
+        width: 599px;
+        height: 478px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nsp {
+        width: 585px;
+        height: 488.75px;
+    }
+}
+
+
 
 @media screen and (max-width: 1233px) {
     .bottle {
