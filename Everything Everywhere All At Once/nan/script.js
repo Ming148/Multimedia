@@ -17,20 +17,40 @@ function isElementInViewport(element) {
   }
 
   function animateOnScroll() {
-    const contentElement = document.querySelector('#pic_part5_1');
+    const foot = document.querySelector('#pic_part5_1');
+    const bottle_left = document.querySelector('#pic_part10_1');
+    const bottle_right = document.querySelector('#pic_part10_3');
     let animationStarted = false;
 
     const startAnimation = () => {
-      if (!animationStarted && isElementInViewport(contentElement)) {
-        // Start the animation only once
-        contentElement.style.animation = 'foot 2s forwards';
+      if (!animationStarted && isElementInViewport(foot)) {
+        foot.style.animation = 'foot 2s forwards';
+        animationStarted = true;
+      }
+      if(!animationStarted && (isElementInViewport(bottle_left) & isElementInViewport(bottle_right))){
+        bottle_left.style.animation = 'toright 1s forwards';
+        bottle_right.style.animation = 'toleft 1s forwards';
+        animationStarted = true;
+      }
+
+    };
+    window.addEventListener('scroll', startAnimation);
+  }
+  function animateOnScroll2() {
+    const bottle_left = document.querySelector('#pic_part10_1');
+    const bottle_right = document.querySelector('#pic_part10_3');
+    let animationStarted = false;
+
+    const startAnimation = () => {
+      if(!animationStarted && (isElementInViewport(bottle_left) & isElementInViewport(bottle_right))){
+        bottle_left.style.animation = 'toright 1s forwards';
+        bottle_right.style.animation = 'toleft 1s forwards';
         animationStarted = true;
       }
     };
-
     window.addEventListener('scroll', startAnimation);
   }
-
-animateOnScroll()
+  animateOnScroll();
+  animateOnScroll2()
 console.log('Element scrolled!');
 

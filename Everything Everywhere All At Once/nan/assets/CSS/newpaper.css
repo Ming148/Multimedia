@@ -53,7 +53,7 @@ body {
 }
 
 .text_part1_1 {
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 5rem;
 }
 
@@ -241,14 +241,14 @@ body {
 
 .part7 {
     background: #F3F1DD;
-    height: 40vh;
+    height: 60vh;
     text-align: center;
     display: grid;
     grid-template-rows: 25% 75%;
 }
 
 .text_part7 {
-    margin-top: 3vh;
+    margin-top: 8vh;
 }
 
 .card_row {
@@ -256,6 +256,7 @@ body {
     grid-template-columns: repeat(5, auto);
     margin: auto;
     grid-gap: 2rem;
+    width: 70%;
 }
 
 #card1,
@@ -378,7 +379,7 @@ body {
 #pic_part10_1 {
     margin: auto;
     width: 100%;
-    animation: toright 2s infinite;
+    /* animation: toright 2s infinite; */
 }
 
 #pic_part10_2 {
@@ -388,7 +389,7 @@ body {
 #pic_part10_3 {
     margin: auto;
     width: 100%;
-    animation: toleft 2s linear infinite;
+    /* animation: toleft 2s linear infinite; */
 }
 
 @keyframes toright {
@@ -454,15 +455,19 @@ body {
 
 /*-----------------------------------------*/
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
     .part1 {
-        max-height: 90vh;
+        height: 80vh;
     }
 
     #pic_part1 {
         width: 40%;
         margin-left: 100px;
         /* top: 140px; */
+    }
+
+    #text-part1_1{
+        width: 60%;
     }
 
     #text_part1_2 {
@@ -571,7 +576,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     #text_header {
         width: 60%;
     }
@@ -592,7 +597,7 @@ body {
     }
 
     .part1 {
-        height: 100vh;
+        min-height: 80vh;
     }
 
     #text_part1_2 {
@@ -687,7 +692,7 @@ body {
     }
 
     .part10 {
-        height: 50vh;
+        min-height: 60vh;
         background-color: #F3F1DD;
     }
 
@@ -714,9 +719,10 @@ body {
         width: 60%;
     }
 
+
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     #text_header {
         display: none;
     }
@@ -738,7 +744,7 @@ body {
     }
 
     .part1 {
-        height: 60vh;
+        min-height: 80vh;
     }
 
     #line {
@@ -774,8 +780,12 @@ body {
     }
 
     .part5 {
-        height: 65vh;
+        min-height: 65vh;
         grid-template-rows: 50% 50%;
+    }
+
+    .text_part5{
+        margin-top: 2rem;
     }
 
     #pic_part5_2 {
@@ -783,7 +793,7 @@ body {
     }
 
     .part6 {
-        height: 30vh;
+        min-height: 30vh;
     }
 
     #text_part6_1 {
@@ -804,8 +814,8 @@ body {
     }
 
     .part7 {
-        height: 120vh;
-        grid-template-rows: 20% 80%;
+        height: 130vh;
+        grid-template-rows: 25vh 100vh;
     }
 
     .part9 {
@@ -822,12 +832,12 @@ body {
     }
 
     .part10 {
-        height: 35vh;
+        height: 40vh;
         background-color: #F3F1DD;
     }
 
     .next {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     #arrow_res{
