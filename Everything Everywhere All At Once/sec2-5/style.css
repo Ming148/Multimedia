@@ -1145,6 +1145,10 @@ p {
     #star {
         width: 80%;
     }
+
+    #no5 {
+        margin: 2.5rem 0px 2.5rem 9.5rem;
+    }
 }
 
 @media (max-width: 768px) {
