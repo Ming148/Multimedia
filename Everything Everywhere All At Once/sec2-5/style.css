@@ -319,10 +319,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     height: auto;
-    top: 93%;
-    left: 6.2vw;
+    top: 92.8%;
+    left: -3vw;
 }
 
 .imgalccat {
@@ -596,27 +596,9 @@ p {
     }
 
     .imgalclion {
-        left: 9%;
-        width: 80%;
+        left: -48%;
+        width: 160%;
         top: 95.4%;
-    }
-
-    .imgstar2 {
-        left: 66%;
-        width: 50%;
-        top: 96.7%;
-    }
-
-    .imgstar3 {
-        width: 110%;
-        left: -35%;
-        top: 95.8%;
-    }
-
-    .imgstar4 {
-        left: 80%;
-        width: 35%;
-        top: 96.1%;
     }
 
     .imgblend,
