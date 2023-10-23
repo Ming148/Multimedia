@@ -1149,6 +1149,14 @@ p {
     #no5 {
         margin: 2.5rem 0px 2.5rem 9.5rem;
     }
+
+    .unlock-bar {
+        width: 55%;
+    }
+
+    #slide {
+        left: 2.5%;
+    }
 }
 
 @media (max-width: 768px) {
