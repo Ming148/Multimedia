@@ -24,7 +24,7 @@ body {
 /*---------------part1--------------------*/
 .part1 {
     background-color: #F3F1DD;
-    min-height: 180vh;
+    min-height: 150vh;
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -457,7 +457,7 @@ body {
 
 @media (width <= 1024px) {
     .part1 {
-        height: 80vh;
+        min-height: 80vh;
     }
 
     #pic_part1 {
