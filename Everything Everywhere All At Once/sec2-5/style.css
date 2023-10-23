@@ -1433,6 +1433,11 @@ p {
     width: 1000px;
     height: 750px;
     animation: shake 5s infinite;
+    cursor: pointer;
+}
+
+.nsp:hover {
+    transform: scale(1.5);
 }
 
 @keyframes shake {
