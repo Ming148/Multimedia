@@ -840,7 +840,7 @@ body {
 
     .part7 {
         height: 130vh;
-        grid-template-rows: vh 100vh;
+        grid-template-rows: 30vh 100vh;
     }
 
     .part9 {
@@ -873,5 +873,13 @@ body {
 
     #arrow_res:hover {
         width: 50%;
+    }
+
+    .card_row_res {
+        margin-top: 0;
+    }
+
+    .card{
+        width: 100%;
     }
 }
