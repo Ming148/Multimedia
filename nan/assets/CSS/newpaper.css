@@ -581,6 +581,10 @@ body {
         width: 100%;
         grid-gap: 0rem;
     }
+    #pic_part10_2 {
+        margin: auto;
+        width: 60%;
+    }
 }
 
 @media (width <= 768px) {
