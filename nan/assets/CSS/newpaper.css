@@ -558,6 +558,11 @@ body {
         height: 60vh;
     }
 
+    #pic_part10_2 {
+        margin: auto;
+        width: 100%;
+    }
+
     .next {
         font-size: 2rem;
     }
@@ -700,6 +705,12 @@ body {
     .part10 {
         min-height: 60vh;
         background-color: #F3F1DD;
+    }
+
+
+    #pic_part10_2 {
+        margin: auto;
+        width: 80%;
     }
 
     .next {
