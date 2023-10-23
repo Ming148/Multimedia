@@ -152,12 +152,12 @@ body {
     height: 130vh;
     display: grid;
     text-align: center;
-    grid-template-rows: 30% 80%;
+    grid-template-rows: 30vh 100vh;
 }
 
 .text_part5 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #text_part5 {
@@ -201,6 +201,10 @@ body {
     width: 25%;
     margin: auto;
     transform: translateY(100%);
+}
+
+.pic_part5_2{
+    width: 100%;
 }
 
 #text_part5_res {
@@ -248,7 +252,7 @@ body {
 }
 
 .text_part7 {
-    margin-top: 8vh;
+    margin:auto;
 }
 
 .card_row {
@@ -319,7 +323,7 @@ body {
     display: grid;
     margin: auto;
     margin-top: 120px;
-    width: 40%;
+    width: 50%;
     grid-template-rows: 60% 60%;
     grid-gap: 2vh;
 }
@@ -355,12 +359,14 @@ body {
 }
 
 .text_part9_2 {
+    display: flex;
     margin: auto;
-    margin-left: 50px;
+    margin-left: 5vw;
+    justify-content: left;
 }
 
 #text_part9_1 {
-    width: 60%;
+    width: 50%;
 }
 
 #text_part9_2 {
@@ -456,7 +462,7 @@ body {
 
 @media (width <=1024px) {
     .part1 {
-        min-height: 80vh;
+        min-height: 120vh;
     }
 
     #pic_part1 {
@@ -493,8 +499,8 @@ body {
     }
 
     .part5 {
-        height: 100vh;
-        grid-template-rows: 40% 60%;
+        height: 120vh;
+        grid-template-rows: 30% 60%;
     }
 
     #text_part5 {
@@ -530,11 +536,15 @@ body {
     }
 
     .part8 {
-        height: 100vh;
+        height: 120vh;
+    }
+
+    #text_part8_1 {
+        width: 80%;
     }
 
     .text_part8_2 {
-        width: 50%;
+        width: 85%;
     }
 
     .part9 {
@@ -546,11 +556,11 @@ body {
     }
 
     #text_part9_1 {
-        width: 80%;
+        width: 60%;
     }
 
     #text_part9_2 {
-        width: 80%;
+        width: 50%;
         margin-left: 3rem;
     }
 
@@ -608,7 +618,7 @@ body {
     }
 
     .part1 {
-        min-height: 80vh;
+        min-height: 100vh;
     }
 
     #text_part1_2 {
@@ -667,12 +677,13 @@ body {
     }
 
     #text_part7_res {
-        width: 80%;
+        width: 100%;
         display: block;
     }
 
     .text_part7 {
-        margin-left: 5vh;
+        margin: auto;
+        width:80%;
     }
 
     .card_row {
@@ -771,17 +782,18 @@ body {
 
     .part2,
     .part3 {
-        height: 40vh;
+        height: 110vh;
     }
 
     #text_part2,
-    #text_part3,
-    #text_part4 {
-        width: 45%;
+    #text_part3{
+        width: 70%;
     }
-
+    #text_part4{
+        width: 60%;
+    }
     .part4 {
-        height: 25vh;
+        height: 30vh;
     }
 
     #text_part5 {
@@ -795,7 +807,7 @@ body {
     }
 
     .part5 {
-        min-height: 65vh;
+        height: 70vh;
         grid-template-rows: 50% 50%;
     }
 
@@ -829,8 +841,8 @@ body {
     }
 
     .part7 {
-        height: 130vh;
-        grid-template-rows: 25vh 100vh;
+        height: 100vh;
+        grid-template-rows: 20vh 80vh;
     }
 
     .part9 {
@@ -843,11 +855,11 @@ body {
 
     #text_part9_2 {
         margin-left: 1rem;
-        width: 80%;
+        width: 65%;
     }
 
     .part10 {
-        height: 40vh;
+        height: 30vh;
         background-color: #F3F1DD;
     }
 
@@ -864,4 +876,9 @@ body {
     #arrow_res:hover {
         width: 50%;
     }
+
+    .card_row_res {
+        margin-top: 0;
+    }
+
 }
