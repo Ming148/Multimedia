@@ -149,7 +149,7 @@ body {
 /* ---------------part5------------------- */
 .part5 {
     background: lightgrey;
-    height: 125vh;
+    height: 130vh;
     display: grid;
     text-align: center;
     grid-template-rows: 30% 80%;
