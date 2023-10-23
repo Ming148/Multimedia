@@ -379,17 +379,16 @@ body {
 #pic_part10_1 {
     margin: auto;
     width: 100%;
-    /* animation: toright 2s infinite; */
 }
 
 #pic_part10_2 {
     margin: auto;
+    width: 100%;
 }
 
 #pic_part10_3 {
     margin: auto;
     width: 100%;
-    /* animation: toleft 2s linear infinite; */
 }
 
 @keyframes toright {
@@ -580,10 +579,6 @@ body {
     .card_row{
         width: 100%;
         grid-gap: 0rem;
-    }
-    #pic_part10_2 {
-        margin: auto;
-        width: 60%;
     }
 }
 
