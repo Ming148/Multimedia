@@ -420,7 +420,7 @@ body {
     width: 80%;
 }
 
-#arrow_res{
+#arrow_res {
     display: none;
 }
 
@@ -454,7 +454,7 @@ body {
 
 /*-----------------------------------------*/
 
-@media (width <= 1024px) {
+@media (width <=1024px) {
     .part1 {
         min-height: 80vh;
     }
@@ -465,7 +465,7 @@ body {
         /* top: 140px; */
     }
 
-    #text-part1_1{
+    #text-part1_1 {
         width: 60%;
     }
 
@@ -525,7 +525,7 @@ body {
         width: 80%;
     }
 
-    .part7{
+    .part7 {
         height: 50vh;
     }
 
@@ -572,17 +572,23 @@ body {
         width: 80%;
     }
 
-    #arrow_res{
+    #arrow_res {
         display: none;
     }
 
-    .card_row{
+    .card_row {
         width: 100%;
         grid-gap: 0rem;
     }
+
+
+    #pic_part10_2 {
+        margin: auto;
+        width: 100%;
+    }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     #text_header {
         width: 60%;
     }
@@ -713,7 +719,7 @@ body {
         display: none;
     }
 
-    #arrow_res{
+    #arrow_res {
         display: block;
         margin: auto;
         width: 50%;
@@ -726,9 +732,15 @@ body {
     }
 
 
+    #pic_part10_2 {
+        margin: auto;
+        width: 100%;
+    }
+
+
 }
 
-@media (width <= 480px) {
+@media (width <=480px) {
     #text_header {
         display: none;
     }
@@ -790,7 +802,7 @@ body {
         grid-template-rows: 50% 50%;
     }
 
-    .text_part5{
+    .text_part5 {
         margin-top: 2rem;
     }
 
@@ -846,7 +858,7 @@ body {
         font-size: 1.25rem;
     }
 
-    #arrow_res{
+    #arrow_res {
         width: 40%;
         animation: shake .5s linear infinite;
         cursor: pointer;
