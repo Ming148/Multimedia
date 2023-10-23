@@ -1430,8 +1430,8 @@ p {
     background-image: url(Images-ming/nsp.png);
     background-position: center;
     background-size: cover;
-    width: 900px;
-    height: 700px;
+    width: 1000px;
+    height: 750px;
     cursor: pointer;
     animation: shake 5s infinite;
     transition: 0.3s;
