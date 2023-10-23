@@ -383,7 +383,7 @@ body {
 
 #pic_part10_2 {
     margin: auto;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #pic_part10_3 {
@@ -580,12 +580,6 @@ body {
         width: 100%;
         grid-gap: 0rem;
     }
-
-
-    #pic_part10_2 {
-        margin: auto;
-        width: 100%;
-    }
 }
 
 @media (width <=768px) {
@@ -730,14 +724,6 @@ body {
     #arrow_res:hover {
         width: 60%;
     }
-
-
-    #pic_part10_2 {
-        margin: auto;
-        width: 100%;
-    }
-
-
 }
 
 @media (width <=480px) {
@@ -867,10 +853,4 @@ body {
     #arrow_res:hover {
         width: 50%;
     }
-
-    #pic_part10_2 {
-        margin: auto;
-        width: 100%;
-    }
-
 }
