@@ -149,7 +149,7 @@ body {
 /* ---------------part5------------------- */
 .part5 {
     background: lightgrey;
-    height: 120vh;
+    height: 125vh;
     display: grid;
     text-align: center;
     grid-template-rows: 30% 80%;
@@ -383,7 +383,7 @@ body {
 
 #pic_part10_2 {
     margin: auto;
-    /* width: 100%; */
+    width: 100%;
 }
 
 #pic_part10_3 {
