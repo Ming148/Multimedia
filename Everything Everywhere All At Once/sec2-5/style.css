@@ -1072,6 +1072,10 @@ p {
     cursor: pointer;
 }
 
+#no5 {
+    margin: 3rem 0px 3rem 15rem;
+}
+
 @media (max-width: 1600px) {
     .header-unlock {
         width: 20%;
@@ -1091,6 +1095,10 @@ p {
         width: 45%;
         font-size: 1.1rem;
     }
+
+    #no5 {
+        margin: 2.5rem 0px 2.5rem 12rem;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -1102,6 +1110,10 @@ p {
     .unlock-box > p {
         margin: 1.5rem 2.5rem 1.5rem 10rem; 
         padding-left: 0;
+    }
+
+    #no5 {
+        margin: 2.5rem 0px 2.5rem 11rem;
     }
 }
 
@@ -1172,9 +1184,11 @@ p {
     
     #unlock {
         width: 60px;
-    
     }
 
+    #no5 {
+        margin: 2.5rem 0px 2.5rem 9rem;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1243,6 +1257,10 @@ p {
     #slide {
         width: 15%;
         left: 3%;
+    }
+
+    #no5 {
+        margin: 1.5rem 0 1.5rem 5.3rem;
     }
 
 }
@@ -1508,7 +1526,7 @@ p {
 
 @media (max-width: 430px) {
     .content {
-        margin-bottom: 9rem;
+        margin-bottom: 8rem;
     }
 
     .unlock-bar {
