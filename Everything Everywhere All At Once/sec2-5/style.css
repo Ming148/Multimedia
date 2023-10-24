@@ -1477,7 +1477,7 @@ p {
     100% {transform: rotate(0deg);}
 }
 
-@media screen and (max-width: 1633px) {
+@media screen and (max-width: 1900px) {
     .title {
         background-size: cover;
         width: 599px;
