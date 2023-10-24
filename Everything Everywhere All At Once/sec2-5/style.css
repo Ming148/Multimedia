@@ -1494,14 +1494,14 @@ p {
     }
 }
 
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1399px) {
     .bottle {
         background-position: right;
     }
 
     .title {
         background-size: cover;
-        width: 100%;
+        width: 399;
         height: 278px;
         position: absolute;
         top: 50%;
