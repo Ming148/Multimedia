@@ -975,11 +975,19 @@ p {
     position: absolute;
     left: 30%;
     top: -3%;
+
+    /* animation: mun 2s ease-in; */
+}
+
+.star-rotate {
+    transform: rotateZ(100deg);
+    transition: 0.25s ease-in;
 }
 
 #lock {
     position: absolute;
     z-index: 1;
+    width: 80%;
 }
 
 .unlock-box {
@@ -1074,6 +1082,15 @@ p {
 
 #no5 {
     margin: 3rem 0px 3rem 15rem;
+}
+
+@keyframes mun {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(30deg);
+    }
 }
 
 @media (max-width: 1600px) {

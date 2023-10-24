@@ -3,12 +3,20 @@ document.addEventListener("DOMContentLoaded", function () {
         var keys = document.querySelectorAll("#key-pic");
         var locks = document.querySelectorAll("#lock-pic");
         var unlockPopups = document.querySelectorAll("#unlock-box");
+        var lock = document.getElementById("lock");
+        var locktop = lock.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+        
+        if(locktop < windowHeight-150){
+            animateImage(lock, true);
+        }else{
+            animateImage(lock, false);
+        }
 
         for (var i = 0; i < keys.length; i++) {
-            var windowHeight = window.innerHeight;
             var elementTop = keys[i].getBoundingClientRect().top;
-            var elementVisible = 150;
             var lockActive = [false, false, false, false, false];
+            var elementVisible = 150;
 
             if (elementTop < windowHeight - elementVisible) {
                 keys[i].classList.add("active");

@@ -84,10 +84,25 @@ document.addEventListener("DOMContentLoaded", function () {
         var keys = document.querySelectorAll("#key-pic");
         var locks = document.querySelectorAll("#lock-pic");
         var unlockPopups = document.querySelectorAll("#unlock-box");
+        var lock = document.getElementById("lock");
+        var star = document.getElementById("star");
+        var locktop = lock.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+                 
+        
+        if(locktop < windowHeight-300){
+            animateImage(lock, true);
+            star.classList.add("star-rotate");
+        }else{
+            animateImage(lock, false);
+            star.classList.remove("star-rotate");
+        }
+        
 
         for (var i = 0; i < keys.length; i++) {
-            var windowHeight = window.innerHeight;
             var elementTop = keys[i].getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
             var elementVisible = 150;
             var lockActive = [false, false, false, false, false];
 
