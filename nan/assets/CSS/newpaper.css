@@ -280,7 +280,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10%);
+    transform: translateY(-2%);
     cursor: pointer;
 }
 
@@ -709,9 +709,9 @@ body {
         margin-top: 1vh;
     }
 
-    .card:hover {
-        transform: translateY(0%);
-    }
+    /* .card:hover {
+        transform: none;
+    } */
 
     .part10 {
         min-height: 60vh;
