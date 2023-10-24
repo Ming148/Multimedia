@@ -747,6 +747,17 @@ body {
         width: 60%;
     }
 }
+@media (width <=1900px) {
+    #text_part9_2 {
+        width: 80%;
+    }
+}
+
+@media (width <=1100px) {
+    #text_part9_2 {
+        width: 60%;
+    }
+}
 
 @media (width <=480px) {
     #text_header {
